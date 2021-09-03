@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <script src="main.js" defer></script>
+</head>
+<body>
+
+    <div class="wrap">
+        <h1>
+            <span class="material-icons">language</span>  
+            <!--icon font를 image처럼 표현: meterial icon-->
+        </h1>
+        <!--웹브라우저를 탐색하는 여러 프로그램들이 h1태그를 먼저해석하고,
+        아이콘 폰트가 이 html문서에서 중요한 파트라고 인식-->
+        <p id="dynamic" class="lg-text active"></p>
+        <p class="sm-text">SEOYEON | Front-End Web Programmar</p>
+        <!--서로 다른 텍스트 크기를 표현하려면 클래스가 다른 p태그를 생성해줘야함
+        p#dynamic.lg-text 탭-->
+    </div>
+
+</body>
+</html>

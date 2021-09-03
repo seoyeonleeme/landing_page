@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: darkslateblue;
+}
+
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+/*
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+*/
+
+.material-icons {
+  font-size: 10rem; /*160px*/
+}
+
+.lg-text {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sm-text {
+  font-size: 1.5rem;
+}
+
+#dynamic {
+  position: relative; /*🧡*/
+  display: inline-block;
+}
+
+#dynamic::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 4px;
+  height: 100%;
+  background-color: white;
+}
+
+/*커서가 아닌데 커서로 보이게 css로 코딩을 한 것임
+position을 이용해서 항상 커서의 위치가 글자의 오른쪽에 위치하도록 함*/
+
+#dynamic.active::after {
+  display: none;
+}
